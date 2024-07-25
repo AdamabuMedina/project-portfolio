@@ -1,1 +1,52 @@
 // ваш код
+
+.header {
+  font-family: var(--second-family);
+  background-color: #171718;
+  padding: 20px 0;
+  border-bottom: 1px solid #26292d;
+
+  &__container {
+    @include flex-all-sb;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #fff;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &-list {
+    @include flex-v-center;
+    column-gap: 40px;
+    font-weight: 500;
+    font-size: 16px;
+
+    &__link {
+      color: #fff;
+
+      &--active {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 100%;
+          display: block;
+          height: 2px;
+          width: 100%;
+          background-color: #5c62ec;
+        }
+      }
+    }
+  }
+}
