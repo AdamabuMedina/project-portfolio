@@ -9,7 +9,15 @@
 
   // colors
   --light-color: #fff;
+  --black-color: #171718;
+  --black-border: #26292d;
+  --primary-color: #5c62ec;
 
   // font
   --second-family: "Poppins", sans-serif;
+
+  --dark-bg: var(--black-color);
+  --dark-border: var(--black-border);
+  --header-text: var(--light-color);
+  --primary: var(--primary-color);
 }
