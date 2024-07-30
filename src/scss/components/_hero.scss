@@ -1,4 +1,6 @@
 .hero {
+  @include flex-all-center;
+
   padding: 40px 0;
   min-height: 665px;
   background-color: var(--dark-bg);
