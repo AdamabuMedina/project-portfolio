@@ -100,3 +100,17 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.title {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--primary);
+}
+
+.section {
+  padding: 70px 0;
+}
