@@ -5,6 +5,7 @@
   background-color: var(--dark-bg);
   padding: 20px 0;
   border-bottom: 1px solid var(--dark-border);
+  letter-spacing: normal;
 
   &__container {
     @include flex-all-sb;
@@ -17,7 +18,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 100%;
-    color: var(--header-text);
+    color: var(--light-text);
 
     strong {
       font-weight: 700;
@@ -31,7 +32,12 @@
     font-size: 16px;
 
     &__link {
-      color: var(--header-text);
+      color: var(--light-text);
+      transition: opacity 0.2s ease-in;
+
+      &:hover {
+        opacity: 0.8;
+      }
 
       &--active {
         position: relative;

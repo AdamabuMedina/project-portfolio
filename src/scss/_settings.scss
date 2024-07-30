@@ -9,6 +9,8 @@
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
 }
 
 .page__body {
