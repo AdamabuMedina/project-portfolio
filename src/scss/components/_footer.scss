@@ -1,0 +1,28 @@
+.footer {
+  background-color: var(--dark-bg);
+  padding: 60px 0 50px;
+  color: var(--light-text);
+  fill: var(--light-text);
+
+  &__container {
+    @include flex-v-center-column;
+
+    row-gap: 27px;
+  }
+
+  &__copyright {
+    p {
+      margin: 0;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.03em;
+      text-align: center;
+    }
+
+    p + p {
+      margin-top: 0.5em;
+    }
+  }
+}

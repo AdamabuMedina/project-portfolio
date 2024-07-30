@@ -12,6 +12,12 @@
   align-items: center;
 }
 
+@mixin flex-v-center-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @mixin flex-h-center {
   display: flex;
   justify-content: center;
