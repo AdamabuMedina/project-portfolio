@@ -15,11 +15,20 @@
     column-gap: 30px;
     row-gap: 30px;
 
+    @include mobile {
+      column-gap: 10px;
+      row-gap: 10px;
+    }
+
     &__item {
       max-width: 370px;
       background-color: var(--light-text);
       box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.25);
       border-radius: 10px;
+
+      @include mobile {
+        max-width: 270px;
+      }
     }
 
     &__img {

@@ -12,6 +12,11 @@
     column-gap: 30px;
     row-gap: 20px;
     flex-wrap: wrap;
+
+    @include mobile {
+      column-gap: 10px;
+      row-gap: 10px;
+    }
   }
 
   &__logo {
@@ -22,6 +27,10 @@
 
     strong {
       font-weight: 700;
+    }
+
+    @include mobile {
+      font-size: 20px;
     }
   }
 

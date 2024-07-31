@@ -1,4 +1,4 @@
-.page-1 {
+.pages {
   &__title {
     margin-bottom: 40px;
   }
@@ -28,6 +28,11 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--text-color);
+
+    @include small-tablet {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
   }
 
   &__link {

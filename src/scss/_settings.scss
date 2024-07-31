@@ -114,6 +114,10 @@ a {
   @include small-tablet {
     font-size: 40px;
   }
+
+  @include mobile {
+    font-size: 24px;
+  }
 }
 
 .subtitle {
@@ -131,10 +135,18 @@ a {
     margin-bottom: 10px;
     font-size: 30px;
   }
+
+  @include mobile {
+    font-size: 20px;
+  }
 }
 
 .section {
   padding: 70px 0;
+
+  @include small-tablet {
+    padding: 50px 0;
+  }
 }
 
 .btn {
