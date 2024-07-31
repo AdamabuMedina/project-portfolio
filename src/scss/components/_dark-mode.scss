@@ -1,0 +1,25 @@
+.dark-mode-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 51px;
+  height: 26px;
+  padding: 5px;
+
+  background-color: #272727;
+  border-radius: 50px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+  }
+
+  &__icon {
+    // fill: var(--light-color);
+    // width: 24px;
+    // height: 24px;
+  }
+}
