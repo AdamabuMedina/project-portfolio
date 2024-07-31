@@ -114,3 +114,41 @@ a {
 .section {
   padding: 70px 0;
 }
+
+.btn {
+  height: 48px;
+  padding: 12px 28px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.btn-outline {
+  @include flex-v-center;
+  column-gap: 10px;
+
+  padding: 12px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 48px;
+  color: #000;
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
