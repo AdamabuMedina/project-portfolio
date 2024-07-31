@@ -9,6 +9,10 @@
   background-size: auto;
   background-position: center center;
 
+  @include small-tablet {
+    min-height: unset;
+  }
+
   &__container {
     text-align: center;
     max-width: 660px;
@@ -25,12 +29,24 @@
 
     &--strong {
       font-size: 60px;
+
+      @include small-tablet {
+        font-size: 40px;
+      }
     }
 
     &--em {
       font-size: 60px;
       font-style: normal;
       color: var(--primary-color);
+
+      @include small-tablet {
+        font-size: 40px;
+      }
+    }
+
+    @include small-tablet {
+      font-size: 40px;
     }
   }
 

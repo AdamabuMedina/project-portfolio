@@ -5,10 +5,18 @@
   color: var(--light-text);
   fill: var(--light-text);
 
+  @include small-tablet {
+    padding: 40px 0 30px;
+  }
+
   &__container {
     @include flex-v-center-column;
 
     row-gap: 27px;
+
+    @include small-tablet {
+      row-gap: 20px;
+    }
   }
 
   &__copyright {

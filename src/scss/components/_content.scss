@@ -2,10 +2,15 @@
   &__list {
     @include flex-v-center-column;
     margin: 0 auto;
+    margin-top: 40px;
     row-gap: 40px;
     max-width: 570px;
-    margin-top: 40px;
     text-align: center;
+
+    @include small-tablet {
+      row-gap: 20px;
+      margin-top: 20px;
+    }
   }
 
   &__descr {
@@ -17,6 +22,10 @@
     letter-spacing: -0.03em;
     text-align: center;
     color: var(--text-color);
+
+    @include small-tablet {
+      font-size: 16px;
+    }
   }
 
   &__link {
