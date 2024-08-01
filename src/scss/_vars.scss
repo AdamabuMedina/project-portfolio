@@ -9,7 +9,8 @@
 
   // colors
   --light-color: #fff;
-  --black-color: #171718;
+  --black-color: #000;
+  --woodsmoke-color: #171718;
   --black-border: #26292d;
   --primary-color: #5c62ec;
   --alabaster-color: #fafafa;
@@ -18,8 +19,9 @@
   --font-family: "DMSans", sans-serif;
   --second-family: "Poppins", sans-serif;
 
-  --text-color: var(--black-color);
-  --dark-bg: var(--black-color);
+  --black-text: var(--black-color);
+  --text-color: var(--woodsmoke-color);
+  --dark-bg: var(--woodsmoke-color);
   --dark-border: var(--black-border);
   --light-text: var(--light-color);
   --primary: var(--primary-color);

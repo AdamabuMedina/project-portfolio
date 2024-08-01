@@ -1,7 +1,7 @@
+// добавление класса для header
+
 const headerList = document.querySelector("#header-list");
 const headerLink = document.querySelectorAll(".header-list__link");
-
-console.log(headerLink);
 
 for (let i = 0; i < headerLink.length; i++) {
   headerLink[i].addEventListener("click", function () {
@@ -17,3 +17,16 @@ for (let i = 0; i < headerLink.length; i++) {
     this.classList.add("header-list__link--active");
   });
 }
+
+// dark mode
+const btnDarkMode = document.querySelector("#dark-mode-btn");
+btnDarkMode.onclick = () => {
+  btnDarkMode.classList.toggle("dark-mode-btn--active");
+  const isDark = document.body.classList.toggle("dark");
+
+  if (isDark) {
+    localStorage.setItem("darkMode", "dark");
+  } else {
+    localStorage.setItem("darkMode", "light");
+  }
+};

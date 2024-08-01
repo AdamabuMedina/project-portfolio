@@ -57,7 +57,7 @@ a {
   appearance: none;
   border: none;
   border-radius: 0;
-  background-color: #fff;
+  background-color: var(--light-text);
 
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
@@ -171,10 +171,10 @@ a {
   column-gap: 10px;
 
   padding: 12px 20px;
-  border: 1px solid #000;
+  border: 1px solid var(--black-text);
   border-radius: 5px;
   height: 48px;
-  color: #000;
+  color: var(--black-text);
   transition: opacity 0.2s ease-in;
 
   &:hover {
