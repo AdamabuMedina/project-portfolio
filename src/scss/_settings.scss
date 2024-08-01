@@ -10,8 +10,6 @@
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
   letter-spacing: -0.01em;
-  color: var(--text-color);
-  background-color: var(--page-bg);
 }
 
 .page__body {
@@ -20,6 +18,9 @@
   min-width: 360px;
   min-height: 100%;
   font-size: 16px;
+
+  background-color: var(--page-bg);
+  color: var(--text-color);
 }
 
 img {
@@ -110,7 +111,7 @@ a {
   font-size: 60px;
   line-height: 130%;
   text-align: center;
-  color: var(--primary);
+  color: var(--title);
 
   @include small-tablet {
     font-size: 40px;

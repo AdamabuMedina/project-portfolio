@@ -22,8 +22,8 @@
 
     &__item {
       max-width: 370px;
-      background-color: var(--light-text);
-      box-shadow: 0 5px 35px 0 rgba(0, 0, 0, 0.25);
+      background-color: var(--project-cart-bg);
+      box-shadow: var(--box-shadow);
       border-radius: 10px;
 
       @include mobile {
@@ -44,7 +44,7 @@
       font-size: 24px;
       line-height: 130%;
       letter-spacing: -0.02em;
-      color: var(--text-color);
+      color: var(--project-cart-text);
 
       @include small-tablet {
         font-size: 20px;
